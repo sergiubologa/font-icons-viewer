@@ -1,0 +1,28 @@
+{
+  "name": "font-icons-viewer",
+  "version": "1.0.0",
+  "description": "This small project allows you to view a preview of your prefered font icons like Font Awesome and many more.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sergiubologa/font-icons-viewer.git"
+  },
+  "keywords": [
+    "font",
+    "icons",
+    "preview"
+  ],
+  "author": "Sergiu Bologa <sergiu.calin.bologa@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sergiubologa/font-icons-viewer/issues"
+  },
+  "homepage": "https://github.com/sergiubologa/font-icons-viewer#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "jquery": "^2.2.3"
+  }
+}
