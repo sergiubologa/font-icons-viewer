@@ -22,7 +22,13 @@
   },
   "homepage": "https://github.com/sergiubologa/font-icons-viewer#readme",
   "dependencies": {
-    "bootstrap": "^3.3.6",
-    "jquery": "^2.2.3"
+    "angular": "^1.5.5",
+    "angular-animate": "^1.5.5",
+    "angular-touch": "^1.5.5",
+    "angular-ui-bootstrap": "^1.3.2",
+    "bootstrap": "^3.3.6"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
   }
 }
