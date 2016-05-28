@@ -3,19 +3,20 @@
 <head>
   <meta charset="utf-8">
   <title>Font Icons Viewer</title>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="SitePoint">
-
-  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/index.css?v=1.0">
-
+  <meta name="description" content="The tool to visualize your prefered font icons.">
+  <meta name="author" content="Sergiu Bologa">
+  
+  <!--STYLES-->
+  <link rel="stylesheet" href="vendor.css?v=1.0.0"/>
+  <link rel="stylesheet" href="styles.css?v=1.0.0"/>
+  <!--STYLES END-->
+  
   <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 </head>
 
 <body>
-  
   <div class="container">
       <nav class="navbar navbar-default">
         <div class="container-fluid">
@@ -63,13 +64,14 @@
         </p>
       </div>
       
-      <div id="icons-container"></div>
+      <div id="icons-container" ui-view></div>
 
     </div> <!-- /container -->
   
-  <script src="node_modules/jquery/dist/jquery.min.js"></script>
-  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script src="js/index.js?v=1.0"></script>
+  <!--SCRIPTS-->
+  <script type="text/javascript" src="vendor.js?v=1.0.0"></script>
+  <script type="text/javascript" src="app.js?v=1.0.0"></script>
+  <!--SCRIPTS END-->
 </body>
 
 </html>
