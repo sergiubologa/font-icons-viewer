@@ -1,0 +1,12 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: $footerHeight;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}

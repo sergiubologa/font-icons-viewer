@@ -60,7 +60,7 @@ gulp.task('clean', function () {
 
 // Compile sass to css
 gulp.task('sassToCss', function (done) {
-  var result = gulp.src('styles/app.scss')
+  var result = gulp.src('app/styles/app.scss')
     .pipe(sourcemaps.init())
     .pipe(sass().on('error', notify.onError({
       message: '<%= error.message %>',
@@ -218,11 +218,11 @@ gulp.task('linkScripts', function (done) {
 });
 
 gulp.task('watch', ['default'], function (done) {
-  gulp.watch('app/styles/**/*.scss', { name: "css changes" }, ['sassToCss']);
+  gulp.watch('app/styles/**/*.scss', { name: "css changes" }, ['sassToCss', 'linkCss']);
   gulp.watch('app/**/*.html', { name: "html changes" }, function() {
     runSequence('copyStaticContentFiles', 'linkCss', 'linkScripts');
   });
-  gulp.watch('app/**/*.ts', { name: "typescript changes", events: ['change'] }, ['compileTs']);
+  gulp.watch('app/**/*.ts', { name: "typescript changes", events: ['change'] }, ['compileTs', 'linkScripts']);
   gulp.watch('app/**/*.ts', { name: "typescript add/remove", events: ['add', 'unlink'] }, function () {
 	  runSequence('compileTs', 'linkScripts');
   }

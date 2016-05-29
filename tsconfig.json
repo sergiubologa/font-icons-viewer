@@ -2,6 +2,8 @@
   "compilerOptions": {},
   "files": [
     "typings/index.d.ts",
+    "app/appModule.ts",
+    "app/common/menuDirective.ts",
     "app/app.ts"
   ]
 }
