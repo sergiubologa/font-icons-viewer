@@ -7,9 +7,20 @@ namespace fiv {
     $stateProvider
       .state('home', {
         url: '/',
-        template: `he he`
+        template: `<fiv-home></fiv-home>`
+      })
+        .state('home.font', {
+          url: 'font/:title/:version',
+          template: `<fiv-icons></fiv-icons>`
+        })
+      .state('about', {
+        url: '/about',
+        templateUrl: `about/ui/about.html`
+      })
+      .state('contact', {
+        url: '/contact',
+        templateUrl: `contact/ui/contact.html`
       });
-
   }])
   .run(['$state', '$rootScope', ($state: ng.ui.IStateService, $rootScope: ng.IRootScopeService): void => {
     // some running code

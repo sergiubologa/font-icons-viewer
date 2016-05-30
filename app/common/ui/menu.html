@@ -14,12 +14,12 @@
     <div id="navbar" class="navbar-collapse collapse" uib-collapse="menuCtrl.isMenuOnSmallScreensCollapsed">
       <ul class="nav navbar-nav">
         <li class="dropdown" uib-dropdown>
-          <a href="#" class="dropdown-toggle" uib-dropdown-toggle role="button" aria-haspopup="true" aria-expanded="false">
+          <a href="javascript:void(0)" class="dropdown-toggle" uib-dropdown-toggle role="button" aria-haspopup="true" aria-expanded="false">
             Popular Font Icons
             <span class="caret"></span>
           </a>
           <ul class="dropdown-menu" uib-dropdown-menu>
-            <li><a href="#">Font Awesome</a></li>
+            <li><a ui-sref="home.font({ title: 'Font Awesome', version: '1.0.0' })">Font Awesome</a></li>
             <li><a href="#">Bootstrap</a></li>
             <li><a href="#">Sport Icons</a></li>
             <li role="separator" class="divider"></li>
@@ -30,9 +30,9 @@
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">GitHub</a></li>
+        <li><a ui-sref="about">About</a></li>
+        <li><a ui-sref="contact">Contact</a></li>
+        <li><a href="#" target="_blank">GitHub</a></li>
       </ul>
     </div>
   </div>

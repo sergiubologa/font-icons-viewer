@@ -4,6 +4,9 @@
     "typings/index.d.ts",
     "app/appModule.ts",
     "app/common/menuDirective.ts",
+    "app/common/fontSelectorDirective.ts",
+    "app/home/homeDirective.ts",
+    "app/home/iconsDirective.ts",
     "app/app.ts"
   ]
 }
